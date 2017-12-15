@@ -1,1 +1,52 @@
-/* Los estilos de tu proyecto */
+/*STYLE*/
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+  }
+
+/*STYLE FOR THE NAVEGATOR*/
+
+/*Importante los elementos primero, luego id, clases, asi sucesivamente*/
+a {
+    color: inherit;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+nav {
+    padding: 20px;
+    overflow: hidden; /* HIDDEN: El contenido es recortado y no se muestran barras de posición. (se ajusta el texto y no se muestra scroll)*/
+} 
+
+nav.navbar {
+    background-color: white;
+}
+
+.btn-left {
+    float: left;
+}
+
+.taxi-principal {/*corta la imagen del panda*/
+    background-image: url('../assets/images/taxi.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;    
+}
+
+.text-left {
+    background-color: #F7B617;
+    text-align: left;
+    float: right;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 40px;
+}
+
+
+
+  

@@ -1,1 +1,95 @@
 <!-- Suelta tus manos y tu mente para solucionar este reto -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LavCar-Bootstrap</title>
+    <!--Relacionamos con el archivo bootstrap minificado(comprimido)-->
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+    <!--Relacionamos con el archivo css para obtener estilo-->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!--HEADER-->
+    <header class="bg-reverse">
+        <!--NAVIGATOR-->
+        <!--Nav right (menú de navegación)-->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">  
+                    <button type="button" class="navbar-toggle collapsed btn-left" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>  
+                    <a href="#"><img src="assets/images/logoForma.png" alt="logo labcar"></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class=""><a href="#">Viaja</a></li>
+                        <li><a href="#about">Conduce</a></li>
+                        <li><a href="#contact">Iniciar sesión</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--VISTA PRINCIPAL-->
+        <div class="taxi-principal taxi-image">
+        </div>
+        <div class="text-left">
+            <h3>Disfruta del viaje <br> Eres dueño de tu tiempo</h3>
+            <p>Viaja en labcar </p>
+            <div class="btn-group" role="group" aria-label="...">
+                <button type="button" class="btn btn-default">REGISTRATE</button>
+            </div>
+            <div>-------</div>
+            <div class="btn-group" role="group" aria-label="...">
+            <button type="button" class="btn btn-default">Convierte en un conductor</button>
+                </div>
+        </div>
+    </header>
+    <!--SECTION TWO (Dowload the app)-->
+    <section>
+        <figure class="col-section">
+            <img class="" src="assets/images/iPhone6Plus.png" alt="image-iphone">
+        </figure>
+        <div class="">
+            <h2>Descarga la nueva app</h2>
+            <p>La versión actualizada de Labcar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
+            <p>Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir.</p>
+        </div>
+        
+    </section>
+    <!--SECTION WE SALUTE YOU-->
+    <section>
+        <figure class="col-section">
+            <img class="img-circle" src="assets/images/rock2.jpg" alt="image-rock2">
+        </figure>
+        <div class="text-rock col-section">
+            <h2>We salute you!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores cum dicta dignissimos, eligendi ex excepturi in odio, perspiciatis porro quis quo quos sint sit temporibus. Est facilis quo tenetur?</p>
+        </div>
+    </section>
+    <!--SECTION LET THERE BE ROCK-->
+    <section>
+        <div class="text-rock col-section">
+            <h2>Let there be rock!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores cum dicta dignissimos, eligendi ex excepturi in odio, perspiciatis porro quis quo quos sint sit temporibus. Est facilis quo tenetur?</p>
+        </div>
+        <figure class="col-section">
+            <img class="img-circle" src="assets/images/rock3.jpg" alt="image-rock3">
+        </figure>
+    </section>
+    <!--FOOTER-->
+    <footer class="bg-reverse text-center">
+        <p>Copyright © Pamela Website 2017</p>
+    </footer>
+    <!--Agregamos jquery ya que bootstrap trabaja con JQUERY-->
+    <script src="vendors/js/jquery.js"></script>
+    <!--Agregamos el link de bootstrap min para que pese menos-->
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

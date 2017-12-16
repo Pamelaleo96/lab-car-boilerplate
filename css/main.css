@@ -6,7 +6,6 @@
   }
 
 /*STYLE FOR THE NAVEGATOR*/
-
 /*Importante los elementos primero, luego id, clases, asi sucesivamente*/
 a {
     color: inherit;
@@ -23,42 +22,65 @@ nav.navbar {
     background-color: white;
 }
 
+/*Menu hamburguesa izquierda*/
 .btn-left {
     float: left;
 }
 
-.taxi-principal {/*corta la imagen del panda*/
+/*STYLE FOR THE HEADER*/
+.background-taxi {/*corta la imagen del taxi*/
     background-image: url('../assets/images/taxi.jpg');
-    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
-    background-position: center;
-    position: relative;    
+    width: 100%;
+    height: 100vh;
+}
+/*style for the text contenedor*/
+/*style for the box rigth*/
+.box-header {
+    position: absolute;   
+    top: 50%;
+}
+
+.box-rigth {
+    left: 70%;    
+    right: top;
+    
 }
 
 .text-left {
     background-color: #F7B617;
     text-align: left;
-    float: right;
-    position: absolute;
-    top: 50%;
-    left: 50% ;
-    transform: translate(-50%, -50%);
     color: white;
+   
+    transform: translate(-50%, -50%);    
     padding: 40px;
 }
 
-.background-app, .background-map    {
+
+.background-app, .background-map, .btn-drive  {
     background-color: #F7B617;
 }
 
+/*STYLE FOR THE SECTION CONDUCIR*/
 .background-conduce {
     background-image:  url('../assets/images/conduce.jpg');
-    height: 100vh;
+    height: 60vh;
     background-size: cover;
     background-position: center;
     position: relative; 
 }
 
+.drive-background {
+    background-color: rgba(14, 14, 15, 0.5);
+    padding: 40px;
+    text-align: left;
+    color: white;
+    font: bold;
+}
+
+/*STYLE FOR THE FOOT*/
 .background-foot {
     background-color: #26282a;
 }

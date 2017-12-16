@@ -53,9 +53,12 @@ nav.navbar {
 
 .background-conduce {
     background-image:  url('../assets/images/conduce.jpg');
-    height: 80vh;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative; 
 }
 
 .background-foot {
-    background-color: #383e42;
+    background-color: #26282a;
 }

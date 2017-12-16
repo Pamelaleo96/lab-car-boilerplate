@@ -41,12 +41,21 @@ nav.navbar {
     float: right;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 50% ;
     transform: translate(-50%, -50%);
     color: white;
     padding: 40px;
 }
 
+.background-app, .background-map    {
+    background-color: #F7B617;
+}
 
+.background-conduce {
+    background-image:  url('../assets/images/conduce.jpg');
+    height: 80vh;
+}
 
-  
+.background-foot {
+    background-color: #383e42;
+}

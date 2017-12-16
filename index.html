@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>LavCar-Bootstrap</title>
+    <!--Enlazamos iconos de Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <!--Relacionamos con el archivo bootstrap minificado(comprimido)-->
     <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
     <!--Relacionamos con el archivo css para obtener estilo-->
@@ -45,47 +47,101 @@
             <div class="btn-group" role="group" aria-label="...">
                 <button type="button" class="btn btn-default">REGISTRATE</button>
             </div>
-            <div>-------</div>
+            <div> ------------------------- o bien -------------------------</div>
             <div class="btn-group" role="group" aria-label="...">
             <button type="button" class="btn btn-default">Convierte en un conductor</button>
-                </div>
+            </div>
         </div>
     </header>
     <!--SECTION TWO (Dowload the app)-->
-    <section>
-        <figure class="col-section">
-            <img class="" src="assets/images/iPhone6Plus.png" alt="image-iphone">
-        </figure>
-        <div class="">
-            <h2>Descarga la nueva app</h2>
-            <p>La versión actualizada de Labcar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
-            <p>Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir.</p>
+    <section class="background-app">
+        <div class="container">
+            <div class="row">
+                <figure class="col-section">
+                    <img class="" src="assets/images/iPhone6Plus.png" alt="image-iphone">
+                </figure>
+                <div class="">
+                    <h2>Conduce cuando quieras</h2>
+                    <p>LabCar es una opci+on flexible para alcanzar <br>
+                    tus metas financieras.</p>
+                </div>
+                <div class="btn-group" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default">Convierte en conductor</button>
+                </div>
+            </div>
         </div>
-        
     </section>
     <!--SECTION WE SALUTE YOU-->
-    <section>
-        <figure class="col-section">
-            <img class="img-circle" src="assets/images/rock2.jpg" alt="image-rock2">
-        </figure>
-        <div class="text-rock col-section">
-            <h2>We salute you!</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores cum dicta dignissimos, eligendi ex excepturi in odio, perspiciatis porro quis quo quos sint sit temporibus. Est facilis quo tenetur?</p>
+    <section class="background-conduce">
+        <div class="container">
+            <div class="row">
+                <figure class="col-section">
+                    <img class="img-circle" src="assets/images/rock2.jpg" alt="image-rock2">
+                </figure>
+                <div class="text-rock col-section">
+                    <h2>We salute you!</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores cum dicta dignissimos, eligendi ex excepturi in odio, perspiciatis porro quis quo quos sint sit temporibus. Est facilis quo tenetur?</p>
+                </div>
+            </div>
         </div>
     </section>
     <!--SECTION LET THERE BE ROCK-->
-    <section>
-        <div class="text-rock col-section">
-            <h2>Let there be rock!</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores cum dicta dignissimos, eligendi ex excepturi in odio, perspiciatis porro quis quo quos sint sit temporibus. Est facilis quo tenetur?</p>
+    <section class="background-map">
+        <div class="container">
+            <div class="row">
+                <div class="text-rock col-section">
+                    <h2>Let there be rock!</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores cum dicta dignissimos, eligendi ex excepturi in odio, perspiciatis porro quis quo quos sint sit temporibus. Est facilis quo tenetur?</p>
+                </div>
+                <figure class="col-section">
+                    <img class="img-circle" src="assets/images/rock3.jpg" alt="image-rock3">
+                </figure>
+            </div>
         </div>
-        <figure class="col-section">
-            <img class="img-circle" src="assets/images/rock3.jpg" alt="image-rock3">
-        </figure>
     </section>
     <!--FOOTER-->
     <footer class="bg-reverse text-center">
-        <p>Copyright © Pamela Website 2017</p>
+        <div class ="background-foot">
+            <img src="assets/images/logoBlanco.png" alt="logo-foot">
+            <hr>
+            <div class="icon-social">
+                <ul>
+                    <li class="icono"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                    <li class="icono"><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                    <li class="icono"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                </ul>
+            </div>
+            <div >
+                <ul>
+                    <li>Viaja</li>
+                    <li>Conduce</li>
+                    <li>Ciudades</li>
+                    <li>Ciudades</li>
+                    <li>Entregas</li>
+                    <li>Cómo funciona?</li>
+                    <li>Países</li>
+                    <li>Seguridad</li>
+                </ul>
+            </div>
+            <div >
+                <ul>
+                    <li>Oportunidades</li>
+                    <li>Nuestra Historia</li>
+                    <li>API de LabCar</li>
+                    <li>Eventos</li>
+                    <li>Desarrolladores</li>
+                    <li>Servicios</li>
+                    <li>Laboratoria</li>
+                    <li>Coders</li>
+                </ul>
+            </div>
+            <figure>
+                <img src="assets/images/appstore.png" alt="appstore">
+                <img src="assets/images/enBadgeWebGeneric.png" alt="logo-foot">
+            </figure>
+            <hr>            
+            <p>© Pamela LabCard Thecnology 2017</p>                
+        </div>
     </footer>
     <!--Agregamos jquery ya que bootstrap trabaja con JQUERY-->
     <script src="vendors/js/jquery.js"></script>

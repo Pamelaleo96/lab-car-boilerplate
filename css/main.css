@@ -11,18 +11,27 @@
     background-color: #F7B617;
 }
 
-.letter-white {
+/*.letter-white {
+    color: white;
+}
+*/
+
+.li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
     color: white;
 }
 
 /*STYLE FOR THE NAVEGATOR*/
 /*Importante los elementos primero, luego id, clases, asi sucesivamente*/
-a {
-    color: inherit;
-    font-size: inherit;
-    text-decoration: none;
-}
-
 nav {
     padding: 20px;
     overflow: hidden; /* HIDDEN: El contenido es recortado y no se muestran barras de posición. (se ajusta el texto y no se muestra scroll)*/
@@ -122,28 +131,52 @@ nav.navbar {
 }
 
 /*STYLE FOR THE FOOTER*/
-footer {
-    padding: 20px;
+#footer {
+    background-color: #2b2b2b;
+    color: white;
+    padding-top: 20px;
+}
+
+#footer > img {
+    width: 100px;
+    margin: 7px;  
+  }
+
+div.row.cuatro-columns div.col-md-3 {
+    min-height: 370px; /**/
+    padding-top: 15px; 
+    line-height: 3em; /**/
     text-align: left;
 }
-
-.decoration li a {
-    text-decoration: none;
-}
-
-.redes {
-    margin-top: 100px;
-    font-size: 20px;
+ul.nav.navbar-nav.icons-mobile>li {
     display: inline-block;
-    padding-right: 5px;
-   
+    padding: 0;
 }
 
-.background-foot {
-    background-color: #26282a;
+ul.nav.navbar-nav.icons-mobile>li a {
+    padding: 2px;
 }
 
-@media (max-width: 768px) {
+div.row.cuatro-columns div.col-md-3:nth-child(1),
+div.row.cuatro-columns div.col-md-3:nth-child(4) {
+  display: block;
+}
+
+#footer > div > div.row.cuatro-columns > div:nth-child(4) > div.text-center {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#footer > div > div.row.cuatro-columns > div:nth-child(4) > div.text-center > img {
+    display: block;
+    margin-bottom: 15px;
+    width: 120px;
+}
+
+
+/*Estilos para el viewport desktop */
+
+@media screen and (min-width: 992px) {
     .border-white {
         border: 1px solid white;
         padding: 30px;
@@ -151,5 +184,55 @@ footer {
 
     .background-app {
         padding: 30px;
+    }
+
+    /*FOOTER desktop*/
+    #footer {
+        width: 100%;
+        background-color: #2b2b2b;
+        display: flex;
+        align-items: center;
+        color: white;
+        padding-top: 20px;
+    }
+
+    #footer img {
+        width: 150px;
+        margin: 7px; 
+    }
+
+    #footer hr {
+        margin: 0;
+        margin-top: 10px; /* separa hr del logo*/
+    }
+
+    #footer p {
+        padding-top: 10px; /*Separa mi parrafo del hr*/
+    }
+
+    div.row.cuatro-columns div.col-md-3 {
+        min-height: 400px;
+        padding-top: 15px;
+        line-height: 3em;
+    }
+
+    div.row.cuatro-columns div.col-md-3:nth-child(1),
+    div.row.cuatro-columns div.col-md-3:nth-child(4) {
+      display: flex-end;
+      justify-content: center;
+    }
+
+    #footer > div > div.row.cuatro-columns > div:nth-child(4) > div.text-center {
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul.icons-desktop > li {
+        display: inline-block;
+        padding: 0;
+    }
+
+    ul.icons-desktop > li a:hover {
+        color: black;
     }
 }

@@ -127,12 +127,16 @@ footer {
     text-align: left;
 }
 
+.decoration li a {
+    text-decoration: none;
+}
+
 .redes {
-    margin-top: 15px;
+    margin-top: 100px;
     font-size: 20px;
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    padding-right: 5px;
+   
 }
 
 .background-foot {

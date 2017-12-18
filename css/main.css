@@ -1,9 +1,19 @@
-/*STYLE*/
+/*STYLE CLASES REUTILIZABLES*/
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     margin: 0;
-  }
+    padding: 0;
+}
+
+/*style for the text contenedor*/
+.background-app, .background-map, .btn-drive {
+    background-color: #F7B617;
+}
+
+.letter-white {
+    color: white;
+}
 
 /*STYLE FOR THE NAVEGATOR*/
 /*Importante los elementos primero, luego id, clases, asi sucesivamente*/
@@ -27,60 +37,115 @@ nav.navbar {
     float: left;
 }
 
-/*STYLE FOR THE HEADER*/
+/*STYLE FOR THE SECTION ONE HEADER*/
 .background-taxi {/*corta la imagen del taxi*/
     background-image: url('../assets/images/taxi.jpg');
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center bottom;
     background-size: cover;
-    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /*Alinea elementos en elementos secundarios*/
     height: 100vh;
 }
-/*style for the text contenedor*/
-/*style for the box rigth*/
-.box-header {
-    position: absolute;   
-    top: 50%;
-}
 
-.box-rigth {
-    left: 70%;    
+.box-header {  
+    background-color:#F7B617;
+    padding: 30px;
     right: top;
-    
 }
 
-.text-left {
-    background-color: #F7B617;
-    text-align: left;
-    color: white;
-   
-    transform: translate(-50%, -50%);    
-    padding: 40px;
+.line-white::after, .line-white::before { /*linea blanca antes y despues de la palabra (o bien)*/
+    content: "";
+    width: 110px;
+    height: 1px;
+    background-color: white;
+    display: inline-block;
 }
 
-
-.background-app, .background-map, .btn-drive  {
-    background-color: #F7B617;
+/*STYLE FOR THE SECTION TWO (download the app)*/
+.border-white {
+    border: 1px solid white;
+    padding: 20px;
+    border-left: 0px;
 }
 
-/*STYLE FOR THE SECTION CONDUCIR*/
+.background-app {
+    height: auto;
+    padding: 30px 30px 30px 0px;
+}
+
+/*STYLE FOR THE SECTION THREE CONDUCIR*/
 .background-conduce {
     background-image:  url('../assets/images/conduce.jpg');
-    height: 60vh;
-    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
-    position: relative; 
+    background-size: cover;
+    height: 60vh;
 }
 
-.drive-background {
-    background-color: rgba(14, 14, 15, 0.5);
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: 0px;
+    padding: 70px 30px;
+    height: 60vh;
+} 
+
+/*STYLE FOR THE SECTION FOUR TARIFAS */
+.background-map {
     padding: 40px;
-    text-align: left;
-    color: white;
-    font: bold;
 }
 
-/*STYLE FOR THE FOOT*/
+.border-tarifa {
+    background-color: transparent;
+    border-radius: 0.4rem;
+    border: 1px solid white;
+    margin: 1rem 1rem 0 1rem;
+    font-size: 1.8rem;
+    padding: 0.7rem 8rem 0.7rem 0.7rem;
+}
+
+.button-ruta {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-left: 6rem;
+    padding: 0.5rem 1.3rem;
+}
+
+.map {
+    border: 1px solid white;
+    padding: 10px;
+}
+
+/*STYLE FOR THE FOOTER*/
+footer {
+    padding: 20px;
+    text-align: left;
+}
+
+.redes {
+    margin-top: 15px;
+    font-size: 20px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
 .background-foot {
     background-color: #26282a;
+}
+
+@media (max-width: 768px) {
+    .border-white {
+        border: 1px solid white;
+        padding: 30px;
+    }
+
+    .background-app {
+        padding: 30px;
+    }
 }
